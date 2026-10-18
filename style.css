@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 1. Berikan warna latar belakang untuk seluruh halaman web */
+    background-color: #f0f2f5; /* Contoh warna abu-abu terang */
+
+    /* 2. Pastikan tinggi body memenuhi layar penuh */
+    min-height: 100vh;
+
+    /* 3. Aktifkan Flexbox untuk memposisikan anak elemen (kartu) ke tengah */
+    display: flex;
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center;     /* Menengahkan secara vertical */
+}
+
