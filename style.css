@@ -70,3 +70,38 @@ body {
     color: white;                    /* Warna teks berubah jadi putih */
     transform: translateY(-2px);     /* Tombol sedikit terangkat ke atas */
 }
+
+/* --- ATURAN KETIKA KELAS .dark-mode AKTIF PADA BODY --- */
+
+/* 1. Mengubah latar belakang seluruh halaman web */
+body.dark-mode {
+    background-color: #121212; /* Warna latar belakang sangat gelap */
+}
+
+/* 2. Mengubah warna kotak kartu utama */
+body.dark-mode .card-container {
+    background-color: #1e1e1e; /* Warna kartu agak lebih terang dari background */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05); /* Menyesuaikan bayangan agar cocok dengan mode gelap */
+}
+
+/* 3. Mengubah warna teks Nama (h1) menjadi terang */
+body.dark-mode .card-header h1 {
+    color: #f0f0f0; /* Warna teks putih/terang */
+}
+
+/* 4. Mengubah warna teks Tagline / Gelar (p) menjadi abu-abu terang */
+body.dark-mode .card-header p {
+    color: #a0a0a0; /* Warna teks abu-abu lembut */
+}
+
+/* 5. Mengubah warna tombol tautan (.btn) agar kontras di mode gelap */
+body.dark-mode .btn {
+    background-color: #2d2d2d; /* Warna latar belakang tombol di mode gelap */
+    color: #f0f0f0;            /* Warna teks tombol */
+}
+
+/* 6. Efek hover tombol saat di mode gelap */
+body.dark-mode .btn:hover {
+    background-color: #0056b3; /* Warna saat disentuh kursor */
+    color: white;
+}
