@@ -17,3 +17,56 @@ body {
     align-items: center;     /* Menengahkan secara vertical */
 }
 
+.card-container {
+    background-color: white; /* Wajib agar kartu punya warna dasar */
+    max-width: 400px;        /* Batas maksimal lebar kartu */
+    width: 90%;              /* Lebar fleksibel di layar HP */
+    padding: 30px;           /* Jarak di dalam kartu agar konten tidak menempel ke tepi */
+    border-radius: 16px;     /* Membuat sudut kotak kartu menjadi melengkung halus */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan lembut agar kartu tampak mengambang */
+    text-align: center;      /* Meratakan seluruh teks di dalam kartu ke tengah */
+}
+
+.profile-img {
+    width: 120px;            /* Lebar foto */
+    height: 120px;           /* Tinggi foto (sama persis dengan lebar agar jadi lingkaran) */
+    border-radius: 50%;      /* Menyulap kotak persegi menjadi lingkaran penuh */
+    object-fit: cover;       /* Mencegah gambar gepeng/terdistorsi */
+    margin-bottom: 20px;     /* Jarak bawah agar tidak menempel pada nama (h1) */
+}
+
+/* Styling khusus untuk Nama (h1) */
+.card-header h1 {
+    font-size: 24px;         /* Ukuran teks nama */
+    font-weight: 700;        /* Ketebalan teks (bold) */
+    color: #333333;          /* Warna teks gelap agar mudah dibaca */
+    margin-bottom: 8px;      /* Jarak tipis ke paragraf di bawahnya */
+}
+
+/* Styling khusus untuk Tagline / Gelar (p) */
+.card-header p {
+    font-size: 14px;         /* Ukuran teks lebih kecil dari h1 */
+    font-weight: 400;        /* Ketebalan normal */
+    color: #666666;          /* Warna abu-abu profesional */
+    margin-bottom: 24px;     /* Jarak bawah yang agak jauh menuju tombol tautan */
+}
+
+/* Tampilan dasar tombol tautan */
+.btn {
+    display: block;                  /* Membuat tautan memenuhi lebar kontainer */
+    text-decoration: none;           /* Menghilangkan garis bawah bawaan tautan */
+    background-color: #f0f2f5;       /* Warna latar belakang tombol standar */
+    color: #333333;                  /* Warna teks di dalam tombol */
+    padding: 12px 20px;              /* Jarak dalam atas-bawah dan kiri-kanan */
+    border-radius: 8px;              /* Sudut tombol sedikit melengkung */
+    margin-bottom: 12px;             /* Jarak antar tombol ke bawah */
+    font-weight: 600;                /* Teks agak tebal */
+    transition: all 0.3s ease;       /* Efek transisi halus saat berubah */
+}
+
+/* Efek interaktif saat kursor menyentuh tombol (Hover) */
+.btn:hover {
+    background-color: #007bff;       /* Berubah warna menjadi biru saat disentuh kursor */
+    color: white;                    /* Warna teks berubah jadi putih */
+    transform: translateY(-2px);     /* Tombol sedikit terangkat ke atas */
+}
